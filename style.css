@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    box-sizing: border-box;   
+
+}
+
+body {
+    font-family: helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+/*------- HEEADER -------*/
+.fixed-header {
+    display: inline-block;
+    height: 69px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+
+.logo {
+    height: 50px;
+    margin: 10px;
+    float: left;   
+}
+
+.nav li {
+    display: inline-block;
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: underline;
+    float: right;   
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color:seashell;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top: 69px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    height: 700px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    margin: 0 auto;  
+}
+
+.banner-print {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.article-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.article-heading {
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+.gallery {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+}
+
+.gallery img {
+    max-width: 300px;
+    max-height: 200px;
+    margin: .45rem;
+    
+}
+.gallery figcaption {
+    margin-top: .45rem;
+    margin-bottom: 1rem;
+}
+.location-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1200px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg); 
+    margin: 0px auto;   
+    margin-top: 4rem;;
+}
+.locations {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.black-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    margin: .909rem;
+    width:300px;
+    height: 300px;
+    opacity: 1;
+}
+.footer h6 {
+    margin: .9rem;
+    
+    
+}
+.footer h2, h5 {
+    text-align: center;
+    margin: 2rem;
+}
