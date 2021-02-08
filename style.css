@@ -3,7 +3,8 @@
     padding: 0px;
 }
 html {
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    font-size: 22px;   
 
 }
 
@@ -14,10 +15,10 @@ body {
     background-color: black;
     opacity: 0.9;
 }
-/*------- HEEADER -------*/
+/*------- HEADER -------*/
 .fixed-header {
     display: inline-block;
-    height: 69px;
+    height: 3.1363rem;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -27,16 +28,16 @@ body {
 }
 
 .logo {
-    height: 50px;
-    margin: 10px;
+    height: 2.2727rem;
+    margin: .4545rem;
     float: left;   
 }
 
 .nav li {
     display: inline-block;
-    margin: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: .909rem;
+    margin-left: .909rem;
+    margin-right: .909rem;
     text-decoration: underline;
     float: right;   
 }
@@ -45,7 +46,12 @@ body {
     text-decoration: none;
     color:seashell;
 }
-
+@media only screen and (max-width:480px) {
+    .nav li {
+        display: none;
+    }
+}
+/*------- MISSION -------*/
 .banner {
     display: flex;
     flex-direction: row;
@@ -54,8 +60,8 @@ body {
     position:relative;
     top: 69px;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
-    height: 700px;
-    width: 1200px;
+    height: 31.818rem;
+    width: 54.545rem;
     background-repeat: no-repeat;
     margin: 0 auto;  
 }
@@ -65,8 +71,16 @@ body {
     background-color: black;
     width: 100%;
     justify-content: center;
-    padding: 10px;
+    padding: .4545rem;
 }
+@media only screen and (max-width:480px) {
+    .banner {
+        width: 100%;
+
+    }
+}
+    
+
 
 .article-container {
     display: flex; 
@@ -78,40 +92,69 @@ body {
     margin-top: 4rem;
     
 }
+/*------- FEATURED TEA -------*/
 .gallery {
     margin-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1000px;
+    width: 45.4545rem;
+}
+
+@media only screen and (max-width:480px) {
+    .gallery {
+        width: 100%;
+        
+    }
 }
 
 .gallery img {
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 13.6363rem;
+    max-height: 9.0909rem;
     margin: .45rem;
     
 }
+@media only screen and (max-width:480px) {
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
 .gallery figcaption {
     margin-top: .45rem;
     margin-bottom: 1rem;
 }
+/*------- LOCATIONS -------*/
 .location-box {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 1200px;
+    height: 22.727rem;
+    width: 54.5454rem;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg); 
     margin: 0px auto;   
     margin-top: 4rem;;
 }
+@media only screen and (max-width:480px) {
+    .location-box {
+        width: 100%;
+        background-repeat: repeat;
+        margin-top: 14rem;
+        
+    } 
+} 
 .locations {
     display: flex;
     justify-content: space-around;
     align-content: center;
 }
+@media only screen and (max-width:480px) {
+    .locations {
+        width: 100%;
+        flex-wrap: wrap;
+        
+    } 
 .black-box {
     display: flex;
     flex-direction: column;
@@ -119,10 +162,11 @@ body {
     justify-content: space-around;
     background-color: black;
     margin: .909rem;
-    width:300px;
-    height: 300px;
+    width: 13.6363rem;
+    height: 13.6363rem;
     opacity: 1;
 }
+/*------- FOOTER -------*/
 .footer h6 {
     margin: .9rem;
     
@@ -132,3 +176,11 @@ body {
     text-align: center;
     margin: 2rem;
 }
+
+@media only screen and (max-width:480px) {
+    .footer {
+        width: 100%;
+        margin-top: 14rem;
+        
+    } 
+} 
